@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Sumit Portfolio</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+	</head>
+	<body>
+		<iframe src="music/ms.mp" allow="autoplay" style="display:none" id="iframeAudio">
+		</iframe>
+
+		<audio autoplay loop  id="playAudio">
+      <source src="music/ms.mp3">
+    </audio>
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+
+
+		<div id="container">
+		<ul class="social">
+			<a class="github-button" href="https://github.com/thunder11h" data-size="large" aria-label="Follow @thunder11h on GitHub">Follow thunder11h</a>
+
+			<li class="social_link_linkedin"><a target="_blank" href="https://www.linkedin.com/in/sumit-debnath-551804112/" title="Linkedin Profile"><span class="icon-linkedin"></span></a></li>
+
+			<li class="social_link_github"><a target="_blank" href="https://github.com/thunder11h" title="Github(thunder11h)"><span class="icon-github"></span></a></li>
+
+			<li class="social_link_facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=100008697241093" title="Facebook Link"><span class="icon-facebook"></span></a></li>
+
+			<li class="social_link_instagram"><a target="_blank" href="https://www.instagram.com/mr_sumitdnath/" title="Instagram Link"><span class="icon-instagram"></span></a></li>
+
+			<li class="social_link_twitter"><a target="_blank" href="https://twitter.com/sumitdebnath913" title=""><span class="icon-twitter"></span></a></li>
+
+			<li class="social_link_gmail"><a target="_blank" href="mailto:::sumitdebnath913@gmail.com" title=""><span class="icon-google3"></span></a></li>
+
+		</ul>
+		<img id ="border" src="border.png">
+			<div id="welcome">
+
+				<p id="firstSentence">Welcome to my <span id="universe">universe</span></p>
+				<p id="lastSentence">Click on the <span id="sun">sun</span> to get started</p>
+			</div>
+			<div id="content">
+				<h2 id="contentTitle"></h2>
+				<p id="subtitle"></p>
+				<p id="description"></p>
+			</div>
+	</div>
+
+
+<script type="text/javascript">
+	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+      $('#iframeAudio').remove()
+    }
+  else{
+     $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background
+  }
+</script>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js'></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
